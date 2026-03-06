@@ -6,7 +6,7 @@
   version: '3.7'
   services:
     rover:
-      image: aztfmod/rover:1.2.5-2208.0208
+      image: aztfmodnew/rover:1.9.8-2511.1521
       user: vscode
 
       # Uncomment to access Azure VPN and rebuild container
@@ -27,7 +27,7 @@
         - /var/run/docker.sock:/var/run/docker.sock
 
       # Overrides default command so things don't shut down after the process ends.
-      command: /bin/sh -c "while sleep 1000; do :; done"
+      command: /bin/bash -c "while sleep 1000; do :; done"
 
   volumes:
     volume-caf-vscode:
